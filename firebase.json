@@ -1,0 +1,14 @@
+{
+    "flutter": {
+        "platforms": {
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "shopper-c2bc6",
+                    "configurations": {
+                        "web": "1:754436534600:web:3a0af992e4d5b2c44bc37d"
+                    }
+                }
+            }
+        }
+    }
+}
