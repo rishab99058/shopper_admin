@@ -60,4 +60,18 @@ class AppSizes {
 
   static const double brandCardWidth = 170.0; // 170
   static const double brandCardHeight = 70.0; // 70
+
+
+  // Image carousel height
+  static const double imageCarouselHeight = 200.0;
+
+  // Loading indicator size
+  static const double loadingIndicatorSize = 36.0;
+
+
+  // Responsive Screen Sizes
+  static const int desktopScreenSize = 1366;
+  static const int tabletScreenSize = 768;
+  static const int mobileScreenSize = 360;
+  static const int customScreenSize = 1100;
 }
