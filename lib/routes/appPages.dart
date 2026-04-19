@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shopper_admin/common/widgets/layout/responsive/desktop/desktopScreen.dart';
-import 'package:shopper_admin/common/widgets/layout/responsive/mobile/mobileScreen.dart';
 import 'package:shopper_admin/common/widgets/layout/responsive/responsiveDesign.dart';
-import 'package:shopper_admin/common/widgets/layout/responsive/tablet/tabletScreen.dart';
 import 'package:shopper_admin/common/widgets/layout/responsive/siteTemplate.dart';
 import 'package:shopper_admin/features/authentication/forgotPassword/view/forgotPasswordDesktopTablet.dart';
 import 'package:shopper_admin/features/authentication/forgotPassword/view/forgotPasswordMobile.dart';
@@ -11,6 +9,9 @@ import 'package:shopper_admin/features/authentication/login/view/loginDesktopTab
 import 'package:shopper_admin/features/authentication/login/view/loginMobile.dart';
 import 'package:shopper_admin/features/authentication/signUp/view/signUpDesktopScreen.dart';
 import 'package:shopper_admin/features/authentication/signUp/view/signUpMobileScreen.dart';
+import 'package:shopper_admin/features/personalization/view/desktop/dashboardDesktopScreen.dart';
+import 'package:shopper_admin/features/personalization/view/mobile/dashboardMobileScreen.dart';
+import 'package:shopper_admin/features/personalization/view/tablet/dashboardTabletScreen.dart';
 import 'package:shopper_admin/routes/AppRoutes.dart';
 import 'package:shopper_admin/routes/routesMiddleware.dart';
 
@@ -21,9 +22,9 @@ class AppPages {
     GetPage(
       name: AppRoutes.home,
       page: () => const ResponsiveDesign(
-        desktopBody: Desktop(),
-        mobileBody: Mobile(),
-        tabletBody: Tablet(),
+        desktopBody: DashboardDesktopScreen(),
+        mobileBody: DashboardMobileScreen(),
+        tabletBody: DashboardTabletScreen(),
       ),
       middlewares: [RouteMiddleware()],
     ),

@@ -2,7 +2,7 @@ enum TextSizes { small, medium, large }
 
 enum ProductType { single, variable }
 
-enum OrderStatus { processing, shipped, delivered, pending }
+enum OrderStatus { processing, shipped, delivered, pending, cancelled }
 
 enum PaymentMethods {
   paypal,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopper_admin/common/widgets/cards/app_3d_card.dart';
 import 'package:shopper_admin/common/widgets/layout/container/appBox.dart';
 
 class Desktop extends StatelessWidget {
@@ -17,11 +18,9 @@ class Desktop extends StatelessWidget {
               children: [
                 // Box 1
                 Expanded(
-                  child: AppBox(
+                  child: App3DCard(
                     child: const Center(child: Text("BOX 1")),
                     onTap: () {},
-                    width: double.infinity,
-                    height: double.infinity,
                     backgroundColor: Colors.blue.withAlpha(50),
                   ),
                 ),
@@ -34,12 +33,12 @@ class Desktop extends StatelessWidget {
                     children: [
                       // Box 2
                       Expanded(
-                        child: AppBox(
-                          child: const Center(child: Text("BOX 2")),
+                        child: App3DCard(
                           onTap: () {},
                           width: double.infinity,
                           height: double.infinity,
                           backgroundColor: Colors.orange.withAlpha(50),
+                          child: const Center(child: Text("BOX 2")),
                         ),
                       ),
                       const SizedBox(height: 20),
@@ -50,21 +49,21 @@ class Desktop extends StatelessWidget {
                           children: [
                             Expanded(
                               child: AppBox(
-                                child: const Center(child: Text("BOX 3")),
                                 onTap: () {},
                                 width: double.infinity,
                                 height: double.infinity,
                                 backgroundColor: Colors.red.withAlpha(50),
+                                child: const Center(child: Text("BOX 3")),
                               ),
                             ),
                             const SizedBox(width: 20),
                             Expanded(
                               child: AppBox(
-                                child: const Center(child: Text("BOX 4")),
                                 onTap: () {},
                                 width: double.infinity,
                                 height: double.infinity,
                                 backgroundColor: Colors.green.withAlpha(50),
+                                child: const Center(child: Text("BOX 4")),
                               ),
                             ),
                           ],
@@ -85,21 +84,21 @@ class Desktop extends StatelessWidget {
                 Expanded(
                   flex: 2,
                   child: AppBox(
-                    child: const Center(child: Text("BOX 5")),
                     onTap: () {},
                     width: double.infinity,
                     height: double.infinity,
                     backgroundColor: Colors.red.withAlpha(30),
+                    child: const Center(child: Text("BOX 5")),
                   ),
                 ),
                 const SizedBox(width: 20),
                 Expanded(
                   child: AppBox(
-                    child: const Center(child: Text("BOX 6")),
                     onTap: () {},
                     width: double.infinity,
                     height: double.infinity,
                     backgroundColor: Colors.red.withAlpha(30),
+                    child: const Center(child: Text("BOX 6")),
                   ),
                 ),
               ],

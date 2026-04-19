@@ -34,9 +34,13 @@ class AppAnimationLoaderWidget extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Lottie.asset(
-            animation,
+          SizedBox(
+            height: 250,
             width: MediaQuery.of(context).size.width * 0.8,
+            child: Lottie.asset(
+              animation,
+              fit: BoxFit.contain,
+            ),
           ), // Display Lottie animation
           const SizedBox(height: AppSizes.defaultSpace),
           Text(

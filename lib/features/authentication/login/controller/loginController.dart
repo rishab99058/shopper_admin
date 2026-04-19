@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:shopper_admin/features/personnalization/controller/userController.dart';
+import 'package:shopper_admin/features/personalization/controller/userController.dart';
 import 'package:shopper_admin/repository/authentication/authenticationRepository.dart';
 import 'package:shopper_admin/utils/constants/images.dart';
 import 'package:shopper_admin/utils/constants/text.dart';
@@ -22,6 +22,7 @@ class LoginController extends GetxController {
 
   @override
   void onInit() {
+    super.onInit();
     email.text = localStorage.read('email') ?? '';
     password.text = localStorage.read('password') ?? '';
   }

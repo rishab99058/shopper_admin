@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:shopper_admin/features/personnalization/controller/userController.dart';
+import 'package:shopper_admin/features/personalization/controller/userController.dart';
 import 'package:shopper_admin/utils/constants/colors.dart';
 import 'package:shopper_admin/utils/constants/sizes.dart';
 import 'package:shopper_admin/utils/helpers/appDeviceHelper.dart';
