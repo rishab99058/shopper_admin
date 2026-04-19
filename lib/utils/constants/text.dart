@@ -34,4 +34,8 @@ class AppTexts {
   static const String createAccount = "Create Account";
   static const String loginWith = "Or Login with";
   static const String signUpWith = "Or Sign Up with";
+
+  static const String roleUser = "User";
+  static const String roleAdmin = "Admin";
+  static const String roleSuperAdmin = "Super Admin";
 }

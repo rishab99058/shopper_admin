@@ -45,6 +45,9 @@ dependencies:
   shimmer: ^3.0.0
   clipboard: ^3.0.14
   image_picker: ^1.2.1
+  iconsax: ^0.0.8
+  get_storage: ^2.1.1
+  data_table_2: ^2.7.2
 
 dev_dependencies:
   flutter_test:

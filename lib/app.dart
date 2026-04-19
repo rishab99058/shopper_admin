@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shopper_admin/common/widgets/layout/responsive/desktop/desktopScreen.dart';
-import 'package:shopper_admin/common/widgets/layout/responsive/mobile/mobileScreen.dart';
-import 'package:shopper_admin/common/widgets/layout/responsive/responsiveDesign.dart';
-import 'package:shopper_admin/common/widgets/layout/responsive/tablet/tabletScreen.dart';
+import 'package:shopper_admin/bindings/generalBindings.dart';
+import 'package:shopper_admin/routes/AppPages.dart';
+import 'package:shopper_admin/routes/AppRoutes.dart';
+import 'package:shopper_admin/routes/routeObserver.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -14,11 +14,21 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Shopper Admin',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: ResponsiveDesign(
-        desktopBody: Desktop(),
-        mobileBody: Mobile(),
-        tabletBody: Tablet(),
+
+      // 1. Define the starting route
+      initialRoute: AppRoutes.home,
+      getPages: AppPages.pages,
+      initialBinding: GeneralBindings(),
+
+      // Sync browser history with Sidebar Controller using custom RouteObserver
+      navigatorObservers: [RouteObservers()],
+
+      unknownRoute: GetPage(
+        name: AppRoutes.home,
+        page: () => Container(child: Text("404")),
       ),
+
+      // 2. Map named routes to their respective screens
     );
   }
 }

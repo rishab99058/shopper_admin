@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shopper_admin/common/widgets/layout/responsive/desktop/desktopLayout.dart';
 import 'package:shopper_admin/common/widgets/layout/responsive/mobile/mobileLayout.dart';
 import 'package:shopper_admin/common/widgets/layout/responsive/tablet/tabletLayout.dart';
-import 'package:shopper_admin/constants/sizes.dart';
+import 'package:shopper_admin/utils/constants/sizes.dart';
 
 class ResponsiveDesign extends StatelessWidget {
   const ResponsiveDesign({
